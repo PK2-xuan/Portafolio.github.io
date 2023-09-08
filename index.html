@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+    </style>
+
+    <title>XUAN PORTAFOLIO</title>
+    <link rel="shortcut icon" href="img/ico.jpg" />
+
+    <link rel="stylesheet" href="css/styles_index.css" />
+    <link rel="stylesheet" href="css/preloaderIndex.css" />
+    <link rel="stylesheet" href="css/contenido.css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <!-- <div class="preloader">
+      <div class="loader">
+        <picture><img src="img/img.png" alt="" /></picture>
+      </div>
+      <span id="loading-text" class="letters">LOADING . . .</span>
+    </div> -->
+
+    <div class="main-content show">
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top mirror">
+          <!-- <a class="navbar-brand" ><img src="img/img.png" width="48" height="48" /></a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="proyectosDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Proyectos</a
+                >
+                <div
+                  class="dropdown-menu dropdown-menu-right"
+                  aria-labelledby="proyectosDropdown"
+                >
+                  <a
+                    class="dropdown-item"
+                    onclick="goToComponent('componente1')"
+                    >Proyecto 1</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    onclick="goToComponent('componente2')"
+                    >Proyecto 2</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  onclick="goToComponent('componente3')"
+                  style="cursor: pointer"
+                  >Acerca de mí</a
+                >
+              </li>
+
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li> -->
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="contenedorcontainer" id="contenidoPortafolio">
+        <div id="particles-js"></div>
+        <div class="div-izquierdo">
+          <div class="content-contenedor">
+            <div class="text-container">
+              <span id="span1">¡Hola!,</span>
+              <span id="span2">mi nombre es XUAN </span>
+              <span id="span3">y te doy la</span>
+              <span id="span4">bienvenida a mi portafolio </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="div-derecho">
+          <div class="letter-x" style="margin-top: 20%">
+            <div class="needle1"></div>
+            <div class="needle2">
+              <div class="dot-container">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="container-left">
+          <a
+            ><img
+              src="img/img.png"
+              width="60"
+              height="60"
+              style="margin-left: 30%"
+          /></a>
+
+          <div class="bar" id="bar1" onclick="goToComponent('componente1')">
+            <span id="spin1">Proyecto 1</span>
+          </div>
+
+          <div class="bar" id="bar2" onclick="goToComponent('componente2')">
+            <span id="spin2">Proyecto 2</span>
+          </div>
+
+          <div class="bar" id="bar3" onclick="goToComponent('componente3')">
+            <span id="spin3">Acerca de mí</span>
+          </div>
+
+          <!-- <div> -->
+          <div class="recuadros">
+            <div class="cuadro1"></div>
+            <div class="MP">Mi Portafolio</div>
+            <div class="cuadro2"></div>
+          </div>
+          <!-- </div> -->
+        </div>
+
+        <!-- derecha  -->
+
+        <div class="component-rigth">
+          <div id="componente1">
+            <div class="content animado2">
+              <h1>A L O N E</h1>
+              <figcaption>
+                Alone es una innovadora tienda virtual de ropa que ofrece una
+                experiencia de compra única. Con su diseño moderno y
+                funcionalidades intuitivas, permite a los clientes explorar y
+                adquirir una amplia selección de prendas de moda desde la
+                comodidad de su hogar. Nuestro objetivo es brindar un servicio
+                excepcional y satisfacer las necesidades de estilo de nuestros
+                clientes. Cuenta con envíos rápidos y devoluciones fáciles.
+              </figcaption>
+
+              <h3>Funciones</h3>
+
+              <div class="function-list">
+                <h7>Diseño web</h7>
+                <h7>Formulario de contacto</h7>
+                <h7>Programación PHP</h7>
+                <h7>Base de datos</h7>
+              </div>
+
+              <button type="button" class="btn">Leer más</button>
+            </div>
+
+            <div class="image-container animado">
+              <img src="img/alone.jpg" alt="" class="image active" />
+              <img src="img/alone3.jpg" alt="" class="image" />
+              <img src="img/alone2.jpg" alt="" class="image" />
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div id="componente2">
+            <div class="content animado2">
+              <h1>Lycoris</h1>
+              <figcaption>
+                Lycoris una plataforma desarrollada en Angular que brinda un
+                amplio catalogo de licores. Cuenta con un sistema de inicio de
+                sesión para gestionar pedidos y inventario, proporcionando un
+                control completo sobre las operaciones comerciales. Simplifica
+                la gestión y optimiza el proceso de ventas.
+              </figcaption>
+
+              <h3>Funciones</h3>
+
+              <div class="function-list">
+                <h7>Diseño en Angular</h7>
+                <h7>Desarrollo Frontend</h7>
+                <h7>Desarrollo Backend</h7>
+                <h7>Spring Boot</h7>
+                <h7>Implementación de Spring Security</h7>
+                <h7>Implementación de JWT</h7>
+                <h7>Gestión de Base de Datos</h7>
+                <h7>MySQL</h7>
+              </div>
+
+              <button type="button" class="btn">Leer más</button>
+            </div>
+
+            <div class="image-container animado">
+              <img src="img/lycoris.jpg" alt="" class="image2 active2" />
+              <img src="img/lycoris2.jpg" alt="" class="image2" />
+              <img src="img/lycoris3.jpg" alt="" class="image2" />
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div id="componente3">
+            <!-- <div class="content animado2">
+
+
+              <div class="image-bg">
+
+  
+                <figcaption class="image-text ala">
+                </figcaption>
+
+              </div>
+              <button type="button" class="btn" style="margin-top: 15%; margin-left: 20%;">
+                Leer más
+              </button>
+            </div> -->
+
+            <div class="image-container">
+              <div class="item one">
+                <img src="img/demo1.png" alt="" />
+              </div>
+            </div>
+
+            <div class="content animado2">
+              <h1>Acerca de mí</h1>
+              <figcaption>
+                Mi nombre es Xuan y soy estudiante de la facultad de Ingeniería
+                Sistemas. Me apasiona la tecnología, el desarrollo web y la
+                creación de soluciones innovadoras.
+              </figcaption>
+
+              <!-- <h3>Contactame en mis redes</h3> -->
+              <ul class="contenedorIcon">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    href="https://github.com/PK2-xuan"
+                    ><i class="fa-brands fa-github fa-2x"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a target="_blank" rel="noopener" href=""
+                    ><i class="fa-brands fa-linkedin fa-2x"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a target="_blank" rel="noopener" href=""
+                    ><i class="fa-brands fa-whatsapp fa-2x"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a target="_blank" rel="noopener" href=""
+                    ><i class="fa-solid fa-cloud fa-2x"></i>
+                  </a>
+                </li>
+
+                <!-- <li>
+                  <a href=""></a>
+                </li> -->
+              </ul>
+
+              <button type="button" class="btn">Leer más</button>
+            </div>
+
+            <!-- <div class="image-container"> -->
+
+            <!-- <div class="image-bg">
+                <img src="img/fondopeque.jpg" alt="">
+  
+                <figcaption class="image-text ala">
+                  Soy estudiante de Ingeniería de Sistemas, me apasionado la tecnología y el desarrollo web.
+                </figcaption>
+
+              </div> -->
+
+            <!-- <div class="duotone-image">
+                <h1>Acerca de mí</h1>
+              </div> -->
+
+            <!-- <div class="container2">
+                <div class="board">
+                  <div class="row">
+                    <div class="square raised"></div>
+                    <div class="square"></div>
+                    <div class="square raised"></div>
+                  </div>
+                  <div class="row">
+                    <div class="square"></div>
+                    <div class="square raised"></div>
+                    <div class="square"></div>
+                  </div>
+                  <div class="row">
+                    <div class="square raised"></div>
+                    <div class="square"></div>
+                    <div class="square raised"></div>
+                  </div>
+
+                </div>
+              </div> -->
+
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/particles.min.js"></script>
+    <script src="js/json-particles.js"></script>
+    <script src="js/efectos.js"></script>
+    <script src="js/efectosAnimacion.js"></script>
+    <script src="js/contenido.js"></script>
+  </body>
+</html>
