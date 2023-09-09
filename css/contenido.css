@@ -191,7 +191,7 @@
 .image-container {
   position: relative;
   width: 80%;
-  /* background: red; */
+  /* background: palegoldenrod; */
   /* padding-left: 3%; */
   padding-top: 6%;
   /* overflow: hidden; */
@@ -219,8 +219,13 @@
   /* clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%); */
 }
 
+.container {
+  text-align: center;
+}
+
 .btn {
-  margin-left: 30%;
+  margin:  0 auto;
+
   border-radius: 16px;
   letter-spacing: 3px;
 
@@ -278,7 +283,7 @@
   height: 100vh;
   padding: 8% 5% 0 5%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   box-shadow: 0 0 10px rgba(86, 43, 43, 0.9);
 }
 
@@ -599,7 +604,7 @@
 
 #componente3 .image-container img {
   height: 60%;
-  width: 45%;
+  width: 50%;
   margin-top: 20%;
   margin-left: 25%;
   /* background: red; */
@@ -629,6 +634,71 @@
     rgba(33.706, 79.458, 101.004, 1),
     rgba(255, 250.993, 249.097, 1)
   );
+}
+
+@media screen and (max-width: 340px) {
+  #componente3 .content {
+    width: 100%; /* Ocupa todo el ancho en dispositivos móviles*/
+    /* background: magenta; */
+  }
+
+  #componente3 .content h1 {
+    padding-top: 0px;
+  }
+
+  #componente3 .image-container {
+    margin-top: 10%;
+    height: 100%;
+    width: 100%;
+    max-height: 45%;
+    /* background: red; */
+  }
+
+  #componente3 .image-container img {
+    width: 50%;
+    height: 54%;
+   /* background: #000; */
+  }
+
+  #componente3 ul {
+    list-style: none;
+    display: flex;
+    /* background-color: #004080; */
+    padding: 5% 0 34% 0;
+  }
+}
+
+@media screen and (min-width: 341px) and (max-width: 400px) {
+
+  #componente3 .content h1 {
+    padding-top: 17%;
+  }
+
+  #componente3 .image-container img {
+    width: 50%;
+    height: 60%;
+    padding-right:2%;
+    /* background: #000; */
+  }
+
+  #componente3 ul {
+    padding: 5% 0 34% 0;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 470px){
+
+
+  #componente3 .image-container img {
+    width: 50%;
+    height: 60%;
+    padding-right:2%;
+    /* background: #000; */
+  }
+
+  #componente3 ul {
+    padding-bottom:25% ;
+  }
 }
 
 @media screen and (max-width: 480px) {
